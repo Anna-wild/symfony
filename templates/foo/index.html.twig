@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ path("hello_page") }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{ path ('foo')}}">FooController</a>
+            </li>
+            </ul>
+    </div>
+    </nav>
+<main class="container main">
+    <h1>Some text</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a ante ac felis mattis maximus nec vitae neque. Nunc id scelerisque velit, nec hendrerit justo. Nullam iaculis gravida semper. Pellentesque non turpis et risus scelerisque sodales nec at velit. Aliquam libero lacus, malesuada ac placerat nec, venenatis ut sapien.
+    Nulla facilisi.
+    Vestibulum mollis pellentesque suscipit. Ut ipsum felis, rutrum ut fermentum eget, congue rhoncus nulla.</p>
+</main>
+</body>
+
+</html>
