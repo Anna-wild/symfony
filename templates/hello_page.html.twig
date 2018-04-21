@@ -1,1 +1,10 @@
-<html><body>hello first page</body></html>
+{% extends"base.html.twig"%}
+{% block title%}some random title{% endblock %}
+{% block body %}
+    <main class="container main">
+        <div>
+Hello {{ getName | default ("guys")}}!
+        </div>
+        <div> My lovely var:{{ someAwesomeVariable | default ('loving default') }}</div>
+    </main>
+{% endblock %}
