@@ -18,6 +18,7 @@ class FormController extends Controller
         dump($form);
         return $this->render('form/index.html.twig', [
             'controller_name' => 'FormController',
+            "myForm"=>$form->createView()
         ]);
     }
 }
